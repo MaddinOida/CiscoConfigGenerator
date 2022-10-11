@@ -1,0 +1,11 @@
+P:\Projekte C#\CiscoConfigGeneratorTest01\bin\Debug\CiscoConfigGeneratorTest01.exe.config
+P:\Projekte C#\CiscoConfigGeneratorTest01\bin\Debug\CiscoConfigGeneratorTest01.exe
+P:\Projekte C#\CiscoConfigGeneratorTest01\bin\Debug\CiscoConfigGeneratorTest01.pdb
+P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.csproj.AssemblyReference.cache
+P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.csproj.SuggestedBindingRedirects.cache
+P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.Form1.resources
+P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.Properties.Resources.resources
+P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.csproj.GenerateResource.cache
+P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.csproj.CoreCompileInputs.cache
+P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.exe
+P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.pdb
