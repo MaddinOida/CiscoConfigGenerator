@@ -9,3 +9,14 @@ P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.c
 P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.csproj.CoreCompileInputs.cache
 P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.exe
 P:\Projekte C#\CiscoConfigGeneratorTest01\obj\Debug\CiscoConfigGeneratorTest01.pdb
+P:\GitProjectsAll\CiscoConfigGenerator\bin\Debug\CiscoConfigGeneratorTest01.exe.config
+P:\GitProjectsAll\CiscoConfigGenerator\bin\Debug\CiscoConfigGeneratorTest01.exe
+P:\GitProjectsAll\CiscoConfigGenerator\bin\Debug\CiscoConfigGeneratorTest01.pdb
+P:\GitProjectsAll\CiscoConfigGenerator\obj\Debug\CiscoConfigGeneratorTest01.csproj.AssemblyReference.cache
+P:\GitProjectsAll\CiscoConfigGenerator\obj\Debug\CiscoConfigGeneratorTest01.csproj.SuggestedBindingRedirects.cache
+P:\GitProjectsAll\CiscoConfigGenerator\obj\Debug\CiscoConfigGeneratorTest01.Form1.resources
+P:\GitProjectsAll\CiscoConfigGenerator\obj\Debug\CiscoConfigGeneratorTest01.Properties.Resources.resources
+P:\GitProjectsAll\CiscoConfigGenerator\obj\Debug\CiscoConfigGeneratorTest01.csproj.GenerateResource.cache
+P:\GitProjectsAll\CiscoConfigGenerator\obj\Debug\CiscoConfigGeneratorTest01.csproj.CoreCompileInputs.cache
+P:\GitProjectsAll\CiscoConfigGenerator\obj\Debug\CiscoConfigGeneratorTest01.exe
+P:\GitProjectsAll\CiscoConfigGenerator\obj\Debug\CiscoConfigGeneratorTest01.pdb

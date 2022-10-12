@@ -1,0 +1,12 @@
+default interface range $$$
+interface range $$$
+	ip address 192.168.12.2 255.255.255.0
+	desc **APNAME_EINFUEGEN**
+	no ip directed-broadcast (default)
+	speed auto
+	ip nat outside
+	ip access-group 103 in
+	no cdp enable
+	crypto ipsec client ezvpn ezvpnclient outside
+	crypto map static-map
+!

@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.IO;
-
-
+using Microsoft.Win32;
 
 namespace CiscoConfigGeneratorTest01
 {
@@ -24,6 +23,8 @@ namespace CiscoConfigGeneratorTest01
         dot1xTemplate ProduktiveTemplate = new dot1xTemplate();
         List<string> PortRange = new List<string>();
 
+        char type = 'n';
+
         public Form1()
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace CiscoConfigGeneratorTest01
 
         private void btn_generate_Click(object sender, EventArgs e)
         {
-            ProduktiveTemplate.loadTemplate();
+            //ProduktiveTemplate.loadTemplate();
 
 
             List<string> temp = new List<string>();
@@ -49,7 +50,13 @@ namespace CiscoConfigGeneratorTest01
 
             //txt_output.Text = ProduktiveTemplate.insertMultiplePortRange(temp);
 
-            FileStream saveConfig = new FileStream(@".\.\newConfig.txt", FileMode.Create, FileAccess.Write);
+            DateTime dt = DateTime.Now;
+
+            string DateAndTime = dt.Ticks.ToString();
+
+
+
+            FileStream saveConfig = new FileStream(@".\.\newConfig" + DateAndTime + ".txt", FileMode.Create, FileAccess.Write);
 
             StreamWriter sw = new StreamWriter(saveConfig);
 
@@ -90,19 +97,56 @@ namespace CiscoConfigGeneratorTest01
             string pos4 = txt_pos4.Text;
             string ItemString = string.Empty;
 
-            if(pos2 == String.Empty || pos2 == "")
-            {
-                ItemString = prefix + pos1 + "/" + pos3 + "-" + pos4;
-            }
-            else
-            {
-                ItemString = prefix + pos1 + "/" + pos2 + "/" + pos3 + "-" + pos4;
-            }
+
+
+            //if(pos2 == String.Empty || pos2 == "")
+            //{
+            //    ItemString = prefix + pos1 + "/" + pos3 + "-" + pos4;
+            //}
+            //else
+            //{
+            //    ItemString = prefix + pos1 + "/" + pos2 + "/" + pos3 + "-" + pos4;
+            //}
+
+
+            ItemString = prefix + pos1 + "/" + pos2 + "/" + pos3 + "-" + pos4;
+
             
+            if(ItemString.EndsWith("-") == true)
+            {
+                ItemString = ItemString.Substring(0,ItemString.Length - 1);
+            }
+
+            if(ItemString.Contains("//") == true)
+            {
+                ItemString = ItemString.Replace("//", "/");
+            }
+
+            if(ItemString.EndsWith("/") == true)
+            {
+                ItemString = ItemString.Replace("/", "");
+            }
+
+            if(ItemString.Contains("/-") == true)
+            {
+                ItemString = ItemString.Replace("/-", "-");
+            }
+
+
+            ItemString = "%" + type + "%" + ItemString;
+
+
+
+
+            //last is -
+            //last is - and double //
+            // double // = bad
+            // folge //- is bad
 
 
             lbx_portranges.Items.Add(ItemString);
 
+            
 
 
         }
@@ -134,5 +178,20 @@ namespace CiscoConfigGeneratorTest01
             }
         }
 
+        private void rbx_normal_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rbx_ap.Checked == false && rbx_normal.Checked == true)
+            {
+                type = 'n';
+            }
+        }
+
+        private void rbx_ap_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbx_ap.Checked == true && rbx_normal.Checked == false)
+            {
+                type = 'a';
+            }
+        }
     }
 }
